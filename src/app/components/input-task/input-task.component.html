@@ -1,0 +1,13 @@
+<div class="fw-bold fs-1 text-center mp-3 mt-5">
+    <p> Hii, {{ greeting }} <br> here you can keep track of your tasks</p>
+</div>
+
+
+<div class="new-task-form mt-5 mb-5">
+
+    <label for="new-task"></label>
+    <input id="new-task" type="text" placeholder="Enter Your Tasks Here" class="input-task" autocomplete="off"
+        [(ngModel)]="task" (keydown.Enter)="addTask()" />
+    <button type="submit" class="add-button" (click)="addTask()">Add Task</button>
+
+</div>

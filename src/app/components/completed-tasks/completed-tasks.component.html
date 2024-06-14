@@ -1,0 +1,7 @@
+<button type="button" class="button"> ✅ Completed ({{completedTasks.length}})</button>
+<div *ngIf="completedTasks.length > 0">
+
+
+    <app-list-task [tasks]="completedTasks" (deleteTaskEvent)="deleteTask($event)"> </app-list-task>
+
+</div>

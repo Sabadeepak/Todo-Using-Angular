@@ -1,0 +1,12 @@
+<button type="button" class="button"> 🚀 On Progress ({{onProgressTask.length}}) </button>
+
+<div *ngIf="onProgressTask.length > 0; else noTasks">
+
+  <app-list-task [tasks]="onProgressTask" (moveToCompletedEvent)="onCheckboxChange($event)"
+    (deleteTaskEvent)="deleteTask($event)"></app-list-task>
+</div>
+<ng-template #noTasks>
+  <div>
+    <h2 class="fw-bold text-center mt-5"> </h2>
+  </div>
+</ng-template>

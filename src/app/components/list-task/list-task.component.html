@@ -1,0 +1,12 @@
+<ul>
+
+  <li class="li-task"  *ngFor="let task of tasks">
+
+    <input type="checkbox" [checked]="task.completed == 'Completed'" (change)="onCheckboxChange($event, task)" *ngIf="task.completed !=='Completed' " />
+    <p> {{ task.description}} </p>
+    <input class="" type="button" value="⌛" (click)="moveToOnProgress(task)" *ngIf="task.completed == 'pending'" />
+    <input class="" type="button" value="❌" (click)="deleteTask(task.id)" />
+
+  </li>
+
+</ul>

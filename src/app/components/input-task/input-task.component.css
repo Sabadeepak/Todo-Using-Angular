@@ -1,0 +1,37 @@
+.new-task-form {
+  display: flex;
+  max-width: 40%;
+  padding: 16px;
+  background-color: #333;
+  border-radius: 10px;
+  align-items: center;
+  margin: auto;
+
+}
+
+.input-task {
+  color: #333;
+  font-size: 16px;
+  flex: 1;
+}
+
+
+.input-task:focus {
+  outline: none;
+  color: #cab2b2;
+}
+
+.add-button {
+  background-color: #8d8b8b;
+  font-weight: bolder;
+  border-radius: 15px;
+  border: none;
+
+}
+
+input {
+  border: none;
+  background-color: #333;
+  font-family: inherit;
+
+}

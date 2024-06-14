@@ -1,0 +1,12 @@
+<button type="button" class="button"> 🎯 To Do ({{pendingTasks.length}})</button>
+
+<div *ngIf="pendingTasks.length > 0; else noTasks">
+
+    <app-list-task [tasks]="pendingTasks" (moveToCompletedEvent)="onCheckboxChange($event)"
+        (moveToOnProgressEvent)="moveToOnProgress($event)" (deleteTaskEvent)="deleteTask($event)"></app-list-task>
+</div>
+<ng-template #noTasks>
+    <div>
+        <h2 class="fw-bold text-center mt-5">No pending tasks</h2>
+    </div>
+</ng-template>

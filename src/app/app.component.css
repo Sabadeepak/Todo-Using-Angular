@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.pendingTask {
+    height: 55vh !important;
+    background-color: #F6F5F2;
+
+}
+
+.onProgressTask {
+    height: 55vh !important;
+    background-color: #F6F5F2;
+
+}
+
+.completedTask {
+    height: 55vh !important;
+    background-color: #F6F5F2;
+}

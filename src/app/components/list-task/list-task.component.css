@@ -1,0 +1,41 @@
+.li-task {
+  display: flex;
+  gap: 15px;
+  background-color: #bdd0e0;
+
+}
+
+.li-task p {
+  flex: 1;
+  margin: 0;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+ul {
+  padding: 2px 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+li {
+  padding: 15px;
+  border-radius: 10px;
+  color: #e7dfdf;
+}
+
+input {
+  border: none;
+  background-color: white;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+

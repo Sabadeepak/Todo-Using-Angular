@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+* body {
+  background-color: #EEF7FF;
+  font-family: Arial, sans-serif;
+}
+
+.button {
+
+  border: none;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  margin: 4px 2px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
